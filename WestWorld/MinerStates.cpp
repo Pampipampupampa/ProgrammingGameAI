@@ -9,15 +9,6 @@ using std::cout;
 using std::endl;
 
 
-// // Define this to output to a file
-// #ifdef TEXTOUTPUT
-// #include <fstream>
-// extern std::ofstream os;  // Need to search the meaning of this.
-// #define cout os
-// #endif
-
-
-
 //--------------------------------------methods for EnterMineAndDigForNugget
 EnterMineAndDigForNugget* EnterMineAndDigForNugget::Instance()
 // Constructor which always return the same instance --> Singleton
@@ -33,7 +24,6 @@ void EnterMineAndDigForNugget::Enter(Miner* p_Miner)
   // change location to the gold mine
   if (p_Miner->Location() != goldmine)
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walkin' to the goldmine" << endl;
 
     p_Miner->ChangeLocation(goldmine);
@@ -50,25 +40,23 @@ void EnterMineAndDigForNugget::Execute(Miner* p_Miner)
 
   p_Miner->IncreaseFatigue();
 
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Pickin' up a nugget" << endl;
 
   // If enough gold mined, go and put it in the bank
   if (p_Miner->PocketsFull())
   {
-    p_Miner->ChangeState(VisitBankAndDepositGold::Instance());
+    p_Miner->GetSM()->ChangeState(VisitBankAndDepositGold::Instance());
   }
 
   if (p_Miner->Thirsty())
   {
-    p_Miner->ChangeState(GoSaloonAndDrink::Instance());
+    p_Miner->GetSM()->ChangeState(GoSaloonAndDrink::Instance());
   }
 }
 
 
 void EnterMineAndDigForNugget::Exit(Miner* p_Miner)
 {
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(p_Miner->ID()) << ": "
        << "Ah'm leavin' the goldmine with mah pockets full o' sweet gold" << endl;
 }
@@ -89,7 +77,6 @@ void VisitBankAndDepositGold::Enter(Miner* p_Miner)
   // On entry the miner makes sure he is located at the bank
   if (p_Miner->Location() != bank)
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Goin' to the bank. Yes siree" << endl;
 
     p_Miner->ChangeLocation(bank);
@@ -105,31 +92,28 @@ void VisitBankAndDepositGold::Execute(Miner* p_Miner)
 
   p_Miner->SetGoldCarried(0);
 
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(p_Miner->ID()) << ": "
        << "Depositing gold. Total savings now: "<< p_Miner->Wealth() << endl;
 
   // Wealthy enough to have a well earned rest?
   if (p_Miner->Wealth() >= ComfortLevel)
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": "
          << "WooHoo! Rich enough for now. Back home to mah li'lle lady" << endl;
 
-    p_Miner->ChangeState(GoHomeAndSleepUntilRested::Instance());
+    p_Miner->GetSM()->ChangeState(GoHomeAndSleepUntilRested::Instance());
   }
 
   // Otherwise get more gold
   else
   {
-    p_Miner->ChangeState(EnterMineAndDigForNugget::Instance());
+    p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 }
 
 
 void VisitBankAndDepositGold::Exit(Miner* p_Miner)
 {
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Leavin' the bank" << endl;
 }
 
@@ -148,7 +132,6 @@ void GoHomeAndSleepUntilRested::Enter(Miner* p_Miner)
 {
   if (p_Miner->Location() != home)
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walkin' home" << endl;
 
     p_Miner->ChangeLocation(home);
@@ -161,11 +144,10 @@ void GoHomeAndSleepUntilRested::Execute(Miner* p_Miner)
   // If miner is not fatigued start to dig for nuggets again.
   if (!p_Miner->Fatigued())  // Pay attention to `!`.
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": "
           << "What a God darn fantastic nap! Time to find more gold" << endl;
 
-     p_Miner->ChangeState(EnterMineAndDigForNugget::Instance());
+     p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 
   else
@@ -173,14 +155,12 @@ void GoHomeAndSleepUntilRested::Execute(Miner* p_Miner)
     // Sleep
     p_Miner->DecreaseFatigue();
 
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "ZZZZ... " << endl;
   }
 }
 
 void GoHomeAndSleepUntilRested::Exit(Miner* pMiner)
 {
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(pMiner->ID()) << ": " << "Leaving the house" << endl;
 }
 
@@ -201,7 +181,6 @@ void GoSaloonAndDrink::Enter(Miner* p_Miner)
   {
     p_Miner->ChangeLocation(saloon);
 
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon" << endl;
   }
 }
@@ -212,21 +191,42 @@ void GoSaloonAndDrink::Execute(Miner* p_Miner)
    {
      p_Miner->BuyAndDrinkAWhiskey();
 
-     // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
      cout << GetNameOfEntity(p_Miner->ID()) << ": " << "That's mighty fine sippin liquer" << endl;
 
-     p_Miner->ChangeState(EnterMineAndDigForNugget::Instance());
+     p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 
   else
   {
-    // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
     cout << "ERROR!\nERROR!\nERROR!" << endl;
   }
 }
 
 void GoSaloonAndDrink::Exit(Miner* p_Miner)
 {
-  // SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);
   cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Leaving the saloon, feelin' good" << endl;
 }
+
+
+//--------------------------------------methods for GoPeeUntilFeelingGood
+GoPeeUntilFeelingGood* GoPeeUntilFeelingGood::Instance()
+// Constructor which always return the same instance --> Singleton
+{
+  static GoPeeUntilFeelingGood instance;
+
+  return &instance;
+}
+
+
+void GoPeeUntilFeelingGood::Enter(Miner* p_Miner){}
+
+void GoPeeUntilFeelingGood::Execute(Miner* p_Miner)
+{
+  if (p_Miner->NeedToPee() && p_Miner->Location() == saloon)
+  {
+    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walking to the pope room ... feelin' good now" << endl;
+    p_Miner->SetPeeLevel(0);
+  }
+}
+
+void GoPeeUntilFeelingGood::Exit(Miner* miner){}

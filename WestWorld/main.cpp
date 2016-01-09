@@ -32,7 +32,7 @@ int main()
   {
     miner.Update();
     // Let user enough time to see what’s happening.
-    sleep(5);
+    sleep(1);
   }
 
   return 0;

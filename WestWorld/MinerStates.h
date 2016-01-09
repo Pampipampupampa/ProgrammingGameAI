@@ -28,7 +28,7 @@ class Miner;
 //  to VisitBankAndDepositGold. If he gets thirsty he'll change state
 //  to QuenchThirst
 //------------------------------------------------------------------------
-class EnterMineAndDigForNugget : public State
+class EnterMineAndDigForNugget : public State<Miner>
 {
 public:
   // This is a singleton.
@@ -56,7 +56,7 @@ private:
 //  miner is subsequently wealthy enough he'll walk home, otherwise he'll
 //  keep going to get more gold
 //------------------------------------------------------------------------
-class VisitBankAndDepositGold : public State
+class VisitBankAndDepositGold : public State<Miner>
 {
 public:
   // This is a singleton.
@@ -84,7 +84,7 @@ private:
 //  Miner will go home and sleep until his fatigue is decreased
 //  sufficiently
 //------------------------------------------------------------------------
-class GoHomeAndSleepUntilRested : public State
+class GoHomeAndSleepUntilRested : public State<Miner>
 {
 public:
   // This is a singleton.
@@ -111,7 +111,7 @@ private:
 //
 //  Miner thirsty and go to the bar to drink something.
 //------------------------------------------------------------------------
-class GoSaloonAndDrink : public State
+class GoSaloonAndDrink : public State<Miner>
 {
 public:
   // This is a singleton.
@@ -133,5 +133,31 @@ private:
 
 };
 
+
+//------------------------------------------------------------------------
+//
+//  Miner global state.
+//------------------------------------------------------------------------
+class GoPeeUntilFeelingGood : public State<Miner>
+{
+public:
+  // This is a singleton.
+  static GoPeeUntilFeelingGood* Instance();
+
+  virtual void Enter(Miner* miner);
+
+  virtual void Execute(Miner* miner);
+
+  virtual void Exit(Miner* miner);
+
+private:
+  // Constructor must be private.
+  GoPeeUntilFeelingGood(){};
+
+  // Copy ctor and assignment should be private too.
+  GoPeeUntilFeelingGood(const GoPeeUntilFeelingGood&);
+  GoPeeUntilFeelingGood& operator=(const GoPeeUntilFeelingGood&);
+
+};
 
 #endif

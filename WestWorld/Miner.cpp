@@ -1,33 +1,17 @@
 #include "Miner.h"
-#include "MinerStates.h"
 
 
-//-------------------- Constructor initialization list ------------------------
+//------------------------------ Constructor ----------------------------------
 //-----------------------------------------------------------------------------
 Miner::Miner(int id)
 // Must have the same order than in declaration or silent the warning: -Wno-reorder
   :BaseGameEntity(id), _m_Location(home),  _m_iGoldCarried(0),
-   _m_iMoneyInBank(0), _m_iThirst(0), _m_iFatigue(0),
-   _m_pCurrentState(GoHomeAndSleepUntilRested::Instance())
-{}
-
-
-//--------------------------- ChangeState -------------------------------------
-//-----------------------------------------------------------------------------
-void Miner::ChangeState(State* pNewState)
+   _m_iMoneyInBank(0), _m_iThirst(0), _m_iFatigue(0), _m_iPeeLevel(0)
 {
-  // Make sure both states are both valid before attempting to
-  // call their methods
-  assert (_m_pCurrentState && pNewState);
-
-  // Call the exit method of the existing state
-  _m_pCurrentState->Exit(this);
-
-  // Change state to the new state
-  _m_pCurrentState = pNewState;
-
-  // Call the entry method of the new state
-  _m_pCurrentState->Enter(this);
+  // Setup the state machine.
+  _m_pStateMachine = new StateMachine<Miner>(this);
+  _m_pStateMachine->SetCurrentState(GoHomeAndSleepUntilRested::Instance());
+  _m_pStateMachine->SetGlobalState(GoPeeUntilFeelingGood::Instance());
 }
 
 
@@ -52,7 +36,10 @@ void Miner::AddToWealth(const int val)
 //-----------------------------------------------------------------------------
 bool Miner::Thirsty() const
 {
-  if (_m_iThirst >= ThirstLevel){return true;}
+  if (_m_iThirst >= ThirstLevel)
+  {
+    return true;
+  }
 
   return false;
 }
@@ -62,13 +49,11 @@ bool Miner::Thirsty() const
 void Miner::Update()
 {
   // Miner thirstier as each iteration (everybody need a bier, isn’t it ?)
-  _m_iThirst += 1;
+  ++_m_iThirst;
+  ++_m_iPeeLevel;
 
-  if (_m_pCurrentState)
-  {
-    // Pass class element to State child class.
-    _m_pCurrentState->Execute(this);
-  }
+  // Let state machine update the state
+  _m_pStateMachine->Update();
 }
 
 
@@ -78,6 +63,18 @@ bool Miner::Fatigued() const
   if (_m_iFatigue > TirednessThreshold)
   {
       return true;
+  }
+
+  return false;
+}
+
+
+//-----------------------------------------------------------------------------
+bool Miner::NeedToPee() const
+{
+  if (_m_iPeeLevel >= PeeThreshold)
+  {
+    return true;
   }
 
   return false;

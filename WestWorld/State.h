@@ -14,10 +14,7 @@
 //------------------------------------------------------------------------
 
 // Template allows to make this class reusable
-// template <class entity_type>
-
-class Miner;
-
+template <class entity_type>
 class State
 {
 public:
@@ -25,13 +22,13 @@ public:
 
 // All pure virtual --> Must be implemented by children
     // This will execute when the state is entered
-    virtual void Enter(Miner*)=0;
+    virtual void Enter(entity_type*)=0;
 
     // This is the state's normal update function
-    virtual void Execute(Miner*)=0;
+    virtual void Execute(entity_type*)=0;
 
     // This will execute when the state is exited.
-    virtual void Exit(Miner*)=0;
+    virtual void Exit(entity_type*)=0;
 
 };
 
