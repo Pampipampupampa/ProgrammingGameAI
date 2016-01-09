@@ -1,0 +1,1344 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"locat",
+				"location"
+			],
+			[
+				"ent",
+				"Enter"
+			],
+			[
+				"G",
+				"GoBarAndDrink"
+			],
+			[
+				"thi",
+				"thirsty"
+			],
+			[
+				"cla",
+				"class"
+			],
+			[
+				"name",
+				"name	Namespace"
+			],
+			[
+				"x",
+				"x1"
+			],
+			[
+				"int",
+				"int_vector2"
+			],
+			[
+				"intv",
+				"int_vector"
+			],
+			[
+				"end",
+				"endl"
+			],
+			[
+				"pus",
+				"pushback"
+			],
+			[
+				"ini",
+				"initialize_vector"
+			],
+			[
+				"VEC",
+				"VectorInt"
+			],
+			[
+				"p_",
+				"_p_vector"
+			],
+			[
+				"Vec",
+				"VectorInt"
+			],
+			[
+				"LI",
+				"LinkedListNode"
+			],
+			[
+				"lis",
+				"list_two"
+			],
+			[
+				"pri",
+				"printer"
+			],
+			[
+				"min",
+				"minidlnad"
+			],
+			[
+				"who",
+				"_whose_move"
+			],
+			[
+				"mv",
+				"_move_count"
+			],
+			[
+				"CHE",
+				"ChessBoard"
+			],
+			[
+				"li",
+				"linkedlist"
+			],
+			[
+				"base",
+				"base_number"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"tes",
+				"test_iterator_over_const_map"
+			],
+			[
+				"na",
+				"name_to_email"
+			],
+			[
+				"it",
+				"itr"
+			],
+			[
+				"map",
+				"map	std::map"
+			],
+			[
+				"pr",
+				"p_root"
+			],
+			[
+				"rec",
+				"recursive_traversal"
+			],
+			[
+				"cou",
+				"counter"
+			],
+			[
+				"pre",
+				"preorder_traversal"
+			],
+			[
+				"pos",
+				"postorder_traversal"
+			],
+			[
+				"va",
+				"key_value"
+			],
+			[
+				"find",
+				"find_max"
+			],
+			[
+				"rig",
+				"p_right"
+			],
+			[
+				"ke",
+				"key_value"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"ri",
+				"p_right"
+			],
+			[
+				"de",
+				"destroy_tree"
+			],
+			[
+				"reu",
+				"return"
+			],
+			[
+				"p",
+				"p_tree"
+			],
+			[
+				"key",
+				"key_value"
+			],
+			[
+				"hei",
+				"height-1"
+			],
+			[
+				"fro",
+				"from_pole"
+			],
+			[
+				"to",
+				"to_pole"
+			],
+			[
+				"fr",
+				"from_pole"
+			],
+			[
+				"rev",
+				"reverse_print_array"
+			],
+			[
+				"rer",
+				"return"
+			],
+			[
+				"powe",
+				"power_recursive"
+			],
+			[
+				"fac",
+				"factorial_recursive"
+			],
+			[
+				"manuel",
+				"manuel"
+			],
+			[
+				"if",
+				"if	If Condition"
+			],
+			[
+				"con",
+				"conductor"
+			],
+			[
+				"p_c",
+				"p_current"
+			],
+			[
+				"Ee",
+				"EnemySpaceShip"
+			],
+			[
+				"add",
+				"addNewEnemyToOrderedList"
+			],
+			[
+				"pm",
+				"p_next_enemy"
+			],
+			[
+				"prv",
+				"p_prev_enemy"
+			],
+			[
+				"nex",
+				"p_next_enemy"
+			],
+			[
+				"V3V",
+				"V3V"
+			],
+			[
+				"pe",
+				"p_enemies"
+			],
+			[
+				"we",
+				"weapon_power"
+			],
+			[
+				"pp",
+				"p_p_array"
+			],
+			[
+				"row",
+				"rows"
+			],
+			[
+				"ac",
+				"actual"
+			],
+			[
+				"bo",
+				"board_simple"
+			],
+			[
+				"dis",
+				"displayArray"
+			],
+			[
+				"ad",
+				"addition"
+			],
+			[
+				"func",
+				"function_with_outputs"
+			],
+			[
+				"retu",
+				"return"
+			],
+			[
+				"last",
+				"last_name"
+			],
+			[
+				"fir",
+				"first_name"
+			],
+			[
+				"co",
+				"cout"
+			],
+			[
+				"usi",
+				"usingt	Using statement (templated)"
+			],
+			[
+				"d",
+				"declv	std::declval<T>()"
+			],
+			[
+				"ind",
+				"index"
+			],
+			[
+				"inde",
+				"index_of_smallest"
+			],
+			[
+				"RC",
+				"RC_RED"
+			],
+			[
+				"play",
+				"playgame"
+			],
+			[
+				"chu",
+				"chunks"
+			],
+			[
+				"ch",
+				"chunks_array"
+			],
+			[
+				"cha",
+				"chunks_array"
+			],
+			[
+				"ar",
+				"array_of_chunks"
+			],
+			[
+				"mag",
+				"magnitude"
+			],
+			[
+				"prin",
+				"print_3_digits"
+			],
+			[
+				"pac",
+				"packs_digits"
+			],
+			[
+				"digits",
+				"digits"
+			],
+			[
+				"pa",
+				"pack_of_three"
+			],
+			[
+				"is",
+				"isDivisible"
+			],
+			[
+				"en",
+				"endl"
+			],
+			[
+				"el",
+				"endl"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"e",
+				"end1"
+			],
+			[
+				"v",
+				"v1"
+			],
+			[
+				"st",
+				"std"
+			],
+			[
+				"p3",
+				"p3_v	statement"
+			],
+			[
+				"p2",
+				"p2_v	statement"
+			],
+			[
+				"p1_",
+				"p1_v	statement"
+			],
+			[
+				"enc",
+				"economy"
+			],
+			[
+				"diag",
+				"diag_P"
+			],
+			[
+				"dia",
+				"diag_P"
+			],
+			[
+				"csv",
+				"csv_in	statement"
+			],
+			[
+				"arE",
+				"area_E"
+			],
+			[
+				"conv",
+				"conv_dict"
+			],
+			[
+				"Re",
+				"Rendement"
+			],
+			[
+				"di",
+				"diag_B"
+			],
+			[
+				"barc",
+				"bar_cumA"
+			],
+			[
+				"bar",
+				"bar_cumC"
+			],
+			[
+				"linTE",
+				"line_TE"
+			],
+			[
+				"cap",
+				"captable"
+			],
+			[
+				"bot",
+				"box_Tbal"
+			],
+			[
+				"line_T",
+				"line_TE"
+			],
+			[
+				"trea",
+				"treat_file"
+			],
+			[
+				"sta",
+				"start_times"
+			],
+			[
+				"fram",
+				"frame_meteoFrance	statement"
+			],
+			[
+				"filena",
+				"files_names	statement"
+			],
+			[
+				"startti",
+				"start_times	statement"
+			],
+			[
+				"fra",
+				"frame_action	param"
+			],
+			[
+				"su",
+				"sum"
+			],
+			[
+				"filen",
+				"file_name	statement"
+			],
+			[
+				"start",
+				"start_time	statement"
+			],
+			[
+				"satt",
+				"start_time	statement"
+			],
+			[
+				"stati",
+				"start_time"
+			],
+			[
+				"file",
+				"file_name	statement"
+			],
+			[
+				"base_",
+				"base_time"
+			],
+			[
+				"skip",
+				"skiprows	param"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "WestWorld/Miner.h",
+			"settings":
+			{
+				"buffer_size": 2613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "WestWorld/main.cpp",
+			"settings":
+			{
+				"buffer_size": 752,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/C++/C++ Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/Python 3/Python3.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				],
+				[
+					"Packages/User/Build/Python.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C++ Single File.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/C++/C++ Single File.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Markdown Preview/Markdown.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Markdown Preview/Markdown.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 374.0,
+		"last_filter": "ren",
+		"selected_items":
+		[
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"re",
+				"PowerCursors: Remove cursor"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"seuse",
+				"Preferences: Settings - User"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"bui",
+				"Build With: Markdown"
+			],
+			[
+				"pyr",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"syc++",
+				"Set Syntax: C++"
+			],
+			[
+				"pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"sytC+",
+				"Set Syntax: C++"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"sy+",
+				"Set Syntax: C++11"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Gist: Insert Gist"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"new",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"seus",
+				"Preferences: Settings - User"
+			],
+			[
+				"sede",
+				"Preferences: Settings - Default"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"sav",
+				"Project: Save As"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings - User"
+			],
+			[
+				"settu",
+				"Preferences: Settings - User"
+			],
+			[
+				"inse",
+				"Gist: Insert Gist"
+			],
+			[
+				"pep",
+				"Anaconda: Autoformat PEP8 Errors"
+			],
+			[
+				"as",
+				"Anaconda: Show error list"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"previe",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packaupda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"viewbro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"inser",
+				"Gist: Insert Gist"
+			],
+			[
+				"remv",
+				"Package Control: Remove Package"
+			],
+			[
+				"py",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"ins ",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"marpr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"marpre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"PYR",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"in",
+				"Gist: Insert Gist"
+			],
+			[
+				"rermo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pry",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"pr",
+				"Permute Lines: Reverse"
+			],
+			[
+				"pas",
+				"Project: Save As"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 427.0
+	},
+	"console":
+	{
+		"height": 245.0,
+		"history":
+		[
+			"import urllib.request,os,sys; exec(\"if sys.version_info < (3,) or os.name != 'nt': raise OSError('This code is for Windows ST3 only!')\"); pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"print(\"eeeee\")",
+			"print(\"eeeee\"",
+			"%clear",
+			"clear",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/misc",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines/WestWorldWithMessaging"
+	],
+	"file_history":
+	[
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/State.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/main.cpp",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/MinerStates.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/Miner.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/MinerStates.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines/WestWorld1/Miner.cpp",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/EntityNames.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/Miner.cpp",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/makefile",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/BaseGameEntity.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/Locations.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/misc/ConsoleUtils.h",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VC6 projects/Common/misc/WindowUtils.h",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Common/misc/ConsoleUtils.h",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Common/misc/utils.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/BaseGameEntity.cpp",
+		"/home/pampi/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines/WestWorld1/MinerOwnedStates.cpp",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/BasegameEntity.h",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines/WestWorld1/MinerOwnedStates.h",
+		"/home/pampi/Documents/Courses/Programming_game_AI_by_example/WestWorld/test.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/AI/Programming_game_AI_by_example/VS2010/Buckland_Chapter2-State Machines/WestWorld1/BaseGameEntity.h",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap26-InheritancePolyymorphism/inheritance_polymorphism.cpp",
+		"/home/pampi/Downloads/Buckland_PGAIBE_Source_VC6-VS2010/VS2010/Buckland_Chapter2-State Machines/WestWorld1/main.cpp",
+		"/home/pampi/Downloads/Buckland_PGAIBE_Source_VC6-VS2010/Important - Readme.txt",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Errata.md",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap25-LifecycleOfClass/test_vector.cpp",
+		"/home/pampi/Downloads/nombre_30",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap25-LifecycleOfClass/vector_int.h",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap25-LifecycleOfClass/vector_int.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap25-LifecycleOfClass/makefile",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap25-LifecycleOfClass/lifecycle_of_class.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap14-DynamicMemoryAllocation/resize_array.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap10-Arrays/arrays.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap15-LinkedLists/linked_list_exo.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap15-LinkedLists/linked_lists.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap13-UsingPointers/using_pointers.cpp",
+		"/home/pampi/Documents/.Civique/Poste/pppp.txt",
+		"/home/pampi/Documents/.Civique/Poste/ppppP.txt",
+		"/home/pampi/Documents/.Civique/README.md",
+		"/home/pampi/.minidlna/README.md",
+		"/home/pampi/.minidlna/minidlna.log",
+		"/home/pampi/.local/share/applications/eezUpnP.desktop",
+		"/home/pampi/Downloads/eezUPnP/configuration/config.ini",
+		"/home/pampi/.minidlna/minidlna.conf",
+		"/etc/sysctl.d/90-inotify.conf",
+		"/home/pampi/.local/share/applications/minidlna.desktop",
+		"/usr/share/applications/steam.desktop",
+		"/usr/share/applications/WebHTTrack-Websites.desktop",
+		"/home/pampi/.local/share/applications/ipython3.desktop",
+		"/home/pampi/.local/share/applications/GoPanda2.desktop",
+		"/home/pampi/.local/share/applications/userapp-Firefox-N60R0X.desktop",
+		"/home/pampi/.config/autostart/minidlna.desktop",
+		"/home/pampi/.local/share/applications/python3.4.desktop",
+		"/home/pampi/.minidlna/minidlna.pid",
+		"/home/pampi/.config/autostart/conky.desktop",
+		"/etc/minidlna.conf",
+		"/home/pampi/Downloads/test.py",
+		"/home/pampi/.coherence",
+		"/usr/share/banshee/audio-profiles/mp3-lame.xml",
+		"/home/pampi/Downloads/minidlna-1.1.5/README",
+		"/home/pampi/Downloads/minidlna-1.1.5/INSTALL",
+		"/home/pampi/Logiciels/.conky/Conky-Vision/.conkyrc",
+		"/usr/local/bin/Dymola_2016",
+		"/usr/local/bin/dymola-2016FD01-x86_64",
+		"/home/pampi/Downloads/Dymola_2016_FD01.Linux/AM_CAT_Dymola.AllLinux/1/1.txt",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap23-HiddingDataRepresentation/hidding_data_representation.cpp",
+		"/home/pampi/Documents/Other/Sauvegarde/Aide.txt",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/breaking_into_smaller_piece.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap23-ProgramDesign/program_design.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/Exercice3/exercice3.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/Exercice3/binary_tree.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/Exercice3/binary_tree.h",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/Exercice3/makefile",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/makefile",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/debugging.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/orig.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/makefile.GNUmakefile",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/linkedlist.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap21-BreakingIntoSmallerPiece/linkedlist.h",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch21/orig_new.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch21/linkedlist.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/exo4.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/exo1.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/exo2.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap19-MoreAboutString/more_about_string.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/hang.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap20-Debugging/crash.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch20/bug3.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch20/bug2.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch20/bug1.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap18-StandardLibrary/standard_library.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/README.md",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap13-UsingPointers/initialize_pointers.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap17-BinaryTree/binary_tree.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap16-Recursion/recursion.cpp",
+		"/home/pampi/Documents/Courses/CodingTheMatrix/mat.py",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch17/binary_tree.cpp",
+		"/home/pampi/Downloads/histogram_demo_features.py",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap16-Recursion/recursive_projects.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap13-UsingPointers/references.cpp",
+		"/home/pampi/Documents/Courses/Algorithms/Algorithm/Code/Recursive/hanoi.py",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap14-DynamicMemoryAllocation/muti_arrays.cpp",
+		"/media/pampi/D4EB-7023/Data/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150724_114711969/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150724_114711969/dat00001.csv",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150724_123823654/dat00001.csv",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150724_123823654/README.md",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap15-LinkedLists/linked_list_webSite.cpp",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150723_131750867/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150723_131750867/dat00001.csv",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150723_105932694/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_4/20150723_105932694/dat00001.csv",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch15/upgrade.cpp",
+		"/home/pampi/Documents/Documentations/Programming_language/C_lineage/C++/Jumping into C++/Sample_code/ch15/vote.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap14-DynamicMemoryAllocation/dynamic_memory_allocation.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap14-DynamicMemoryAllocation/multiplication_table.cpp",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap14-DynamicMemoryAllocation/test.cpp",
+		"/media/pampi/D4EB-7023/Data/Expérience_3-2/20150721_105450105/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_3-3/20150722_110342075/dat00001.csv",
+		"/media/pampi/D4EB-7023/Data/Expérience_3-3/20150722_110342075/README.md",
+		"/media/pampi/D4EB-7023/Data/Expérience_3-3/20150722_104500747/dat00001.csv",
+		"/media/pampi/D4EB-7023/Data/Expérience_3-3/20150722_104500747/README.md",
+		"/home/pampi/Documents/Courses/C++/Jumping_into_C++/Chap3-Variables/variables.cpp",
+		"/home/pampi/Documents/Temp/test.cpp",
+		"/media/pampi/D4EB-7023/Expérimentations/Data/README.md",
+		"/media/pampi/D4EB-7023/Expérimentations/Data/Expérience_3-2/20150721_104058745/README.md",
+		"/media/pampi/D4EB-7023/Expérimentations/Data/Expérience_3-2/20150721_105450105/dat00001.csv"
+	],
+	"find":
+	{
+		"height": 58.0
+	},
+	"find_in_files":
+	{
+		"height": 97.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"entity_type",
+			"<Miner>",
+			"State*",
+			"State",
+			"class_",
+			"Miner",
+			"exec",
+			"Execute",
+			"update",
+			"upda",
+			"//",
+			"Lea",
+			"GoHomeAndSleepTilRested",
+			"Loc",
+			"  SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);",
+			"    SetTextColor(FOREGROUND_RED| FOREGROUND_INTENSITY);",
+			"SetTextColor",
+			"m_iNextValidID",
+			",",
+			"QuenchThirst",
+			"GoSaloonAndDrink",
+			" << \"\\n\"",
+			"pMiner",
+			"<< \"\\n\" ",
+			"Bar",
+			"GoBarAndDrink",
+			"    ",
+			"\n        ",
+			"    ",
+			"     ",
+			"    ",
+			"pMiner",
+			" << \"\\n\"",
+			"GetNameOfEntity",
+			"GoBarAndDrink",
+			"QuenchThirst",
+			" << \"\\n\"",
+			"pMiner",
+			"GoHomeAndSleepUntilRested",
+			"GoBarAndDrink",
+			"VisitBankAndDepositGold",
+			"GoHomeAndSleepUntilRested",
+			"EnterMineAndDigForNugget",
+			"VisitBankAndDepositGold",
+			"QuenchThirst",
+			"and destructor ",
+			"&);",
+			"(){};",
+			"GoHomeAndSleepUntilRested",
+			"QuenchThirst",
+			"EnterMineAndDigForNugget",
+			"GoHomeAndSleepUntilRested",
+			"GoHomeAndSleepTilRested",
+			"EnterMineAndDigForNugget",
+			"VisitBankAndDepositGold",
+			"_OWNED",
+			"  ",
+			"     ",
+			"inside corresponding",
+			"m_Location",
+			"m_pCurrentState",
+			"m_iFatigue",
+			"m_iThirst",
+			"m_iMoneyInBank",
+			"m_iGoldCarried",
+			"()",
+			"const",
+			"m_iFatigue",
+			"m_iThirst",
+			"m_iMoneyInBank",
+			"m_iGoldCarried",
+			"m_pCurrentState",
+			"pm_iFatigue",
+			"pm_iThirst",
+			"pm_iMoneyInBank",
+			"pm_iGoldCarried",
+			"pm_pCurrentState",
+			"                   ",
+			"SetID",
+			"_SetID",
+			"m_iNextValidID",
+			"m_ID",
+			"  ",
+			"    ",
+			"   ",
+			"  ",
+			"_getNextSerialNumber",
+			"actual",
+			"void",
+			"int_vector",
+			"ORIG",
+			"ORIG_H",
+			"display",
+			"5",
+			"999",
+			"pushfront",
+			"vector",
+			"_elements_set",
+			"_element_set",
+			"initialize_vector",
+			"array",
+			"int",
+			"void",
+			"(",
+			"LinkedList",
+			"ConstHolder",
+			".\n",
+			"UpnP",
+			"/run/minidlna",
+			"\n#",
+			"media",
+			"$USER",
+			"network_interface",
+			"Black",
+			"PlayerColor",
+			"ChessBoard2",
+			"Board2",
+			"ORIG",
+			"EXECUTABLE",
+			"ORIG",
+			"[ ",
+			"souris",
+			"chat",
+			"exp",
+			"base",
+			"insert",
+			">>",
+			"recursive_traversal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			",",
+			"    ",
+			"data1",
+			"[h]",
+			"linewidth=self.width"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "WestWorld/Miner.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C Improved/C Improved.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "WestWorld/main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 752,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								560,
+								560
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 312.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": false,
+	"output.anaconda_documentation":
+	{
+		"height": 376.0
+	},
+	"output.exec":
+	{
+		"height": 275.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "Programming_game_AI_by_example.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ran",
+				"Jumping_into_C++/Chap9-Randomizing/randomizing.cpp"
+			],
+			[
+				"pyr",
+				"SolisArt_script\\Reader\\Plotters\\parameters.py"
+			],
+			[
+				"yr",
+				"Notebooks\\.ipynb_checkpoints\\Solar_system_output-checkpoint.ipynb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Courses/C++/Jumping_into_C++/C++_Course.sublime-project"
+			],
+			[
+				"alg",
+				"~/Documents/Courses/Algorithms/Algorithm/Code/Data_algorithm.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 310.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 378.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
