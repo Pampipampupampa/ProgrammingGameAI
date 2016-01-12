@@ -11,7 +11,7 @@ Miner::Miner(int id)
   // Setup the state machine.
   _m_pStateMachine = new StateMachine<Miner>(this);
   _m_pStateMachine->SetCurrentState(GoHomeAndSleepUntilRested::Instance());
-  _m_pStateMachine->SetGlobalState(GoPeeUntilFeelingGood::Instance());
+  _m_pStateMachine->SetGlobalState(MinerGlobalState::Instance());
 }
 
 

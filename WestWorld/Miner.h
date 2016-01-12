@@ -32,7 +32,7 @@ const int ThirstLevel        = 5;
 // Above this value a miner is sleepy
 const int TirednessThreshold = 5;
 // Above this value the miner will pee
-const int PeeThreshold = 10;
+const int PeeThreshold = 5;
 
 
 

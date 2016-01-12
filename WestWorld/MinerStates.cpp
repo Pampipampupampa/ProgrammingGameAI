@@ -9,6 +9,29 @@ using std::cout;
 using std::endl;
 
 
+//--------------------------------------methods for MinerGlobalState
+MinerGlobalState* MinerGlobalState::Instance()
+// Constructor which always return the same instance --> Singleton
+{
+  static MinerGlobalState instance;
+
+  return &instance;
+}
+
+
+void MinerGlobalState::Enter(Miner* p_miner){}
+
+void MinerGlobalState::Execute(Miner* p_miner)
+{
+  if (p_miner->NeedToPee() && p_miner->Location() == saloon)
+  {
+    p_miner->GetSM()->ChangeState(GoPeeUntilFeelingGood::Instance());
+  }
+}
+
+void MinerGlobalState::Exit(Miner* p_miner){}
+
+
 //--------------------------------------methods for EnterMineAndDigForNugget
 EnterMineAndDigForNugget* EnterMineAndDigForNugget::Instance()
 // Constructor which always return the same instance --> Singleton
@@ -18,46 +41,54 @@ EnterMineAndDigForNugget* EnterMineAndDigForNugget::Instance()
   return &instance;
 }
 
-void EnterMineAndDigForNugget::Enter(Miner* p_Miner)
+void EnterMineAndDigForNugget::Enter(Miner* p_miner)
 {
+  // Change color.
+  cout << "\033[32m";
+
   // If the miner is not already located at the goldmine, he must
   // change location to the gold mine
-  if (p_Miner->Location() != goldmine)
+  if (p_miner->Location() != goldmine)
   {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walkin' to the goldmine" << endl;
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "Walkin' to the goldmine" << endl;
 
-    p_Miner->ChangeLocation(goldmine);
+    p_miner->ChangeLocation(goldmine);
   }
 }
 
 
-void EnterMineAndDigForNugget::Execute(Miner* p_Miner)
+void EnterMineAndDigForNugget::Execute(Miner* p_miner)
 {
+  // Change color.
+  cout << "\033[32m";
+
   // The miner digs for gold until he is carrying in excess of MaxNuggets.
   // If he gets thirsty during his digging he packs up work for a while and
   // changes state to go to the saloon for a whiskey.
-  p_Miner->AddToGoldCarried(1);
+  p_miner->AddToGoldCarried(1);
 
-  p_Miner->IncreaseFatigue();
+  p_miner->IncreaseFatigue();
 
-  cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Pickin' up a nugget" << endl;
+  cout << GetNameOfEntity(p_miner->ID()) << ": " << "Pickin' up a nugget" << endl;
 
   // If enough gold mined, go and put it in the bank
-  if (p_Miner->PocketsFull())
+  if (p_miner->PocketsFull())
   {
-    p_Miner->GetSM()->ChangeState(VisitBankAndDepositGold::Instance());
+    p_miner->GetSM()->ChangeState(VisitBankAndDepositGold::Instance());
   }
 
-  if (p_Miner->Thirsty())
+  if (p_miner->Thirsty())
   {
-    p_Miner->GetSM()->ChangeState(GoSaloonAndDrink::Instance());
+    p_miner->GetSM()->ChangeState(GoSaloonAndDrink::Instance());
   }
 }
 
 
-void EnterMineAndDigForNugget::Exit(Miner* p_Miner)
+void EnterMineAndDigForNugget::Exit(Miner* p_miner)
 {
-  cout << GetNameOfEntity(p_Miner->ID()) << ": "
+  // Change color.
+  cout << "\033[32m";
+  cout << GetNameOfEntity(p_miner->ID()) << ": "
        << "Ah'm leavin' the goldmine with mah pockets full o' sweet gold" << endl;
 }
 
@@ -72,49 +103,56 @@ VisitBankAndDepositGold* VisitBankAndDepositGold::Instance()
   return &instance;
 }
 
-void VisitBankAndDepositGold::Enter(Miner* p_Miner)
+void VisitBankAndDepositGold::Enter(Miner* p_miner)
 {
-  // On entry the miner makes sure he is located at the bank
-  if (p_Miner->Location() != bank)
-  {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Goin' to the bank. Yes siree" << endl;
+  // Change color.
+  cout << "\033[32m";
 
-    p_Miner->ChangeLocation(bank);
+  // On entry the miner makes sure he is located at the bank
+  if (p_miner->Location() != bank)
+  {
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "Goin' to the bank. Yes siree" << endl;
+
+    p_miner->ChangeLocation(bank);
   }
 }
 
 
-void VisitBankAndDepositGold::Execute(Miner* p_Miner)
+void VisitBankAndDepositGold::Execute(Miner* p_miner)
 {
+  // Change color.
+  cout << "\033[32m";
 
   // Deposit the gold
-  p_Miner->AddToWealth(p_Miner->GoldCarried());
+  p_miner->AddToWealth(p_miner->GoldCarried());
 
-  p_Miner->SetGoldCarried(0);
+  p_miner->SetGoldCarried(0);
 
-  cout << GetNameOfEntity(p_Miner->ID()) << ": "
-       << "Depositing gold. Total savings now: "<< p_Miner->Wealth() << endl;
+  cout << GetNameOfEntity(p_miner->ID()) << ": "
+       << "Depositing gold. Total savings now: "<< p_miner->Wealth() << endl;
 
   // Wealthy enough to have a well earned rest?
-  if (p_Miner->Wealth() >= ComfortLevel)
+  if (p_miner->Wealth() >= ComfortLevel)
   {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": "
+    cout << GetNameOfEntity(p_miner->ID()) << ": "
          << "WooHoo! Rich enough for now. Back home to mah li'lle lady" << endl;
 
-    p_Miner->GetSM()->ChangeState(GoHomeAndSleepUntilRested::Instance());
+    p_miner->GetSM()->ChangeState(GoHomeAndSleepUntilRested::Instance());
   }
 
   // Otherwise get more gold
   else
   {
-    p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
+    p_miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 }
 
 
-void VisitBankAndDepositGold::Exit(Miner* p_Miner)
+void VisitBankAndDepositGold::Exit(Miner* p_miner)
 {
-  cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Leavin' the bank" << endl;
+  // Change color.
+  cout << "\033[32m";
+  cout << GetNameOfEntity(p_miner->ID()) << ": " << "Leavin' the bank" << endl;
 }
 
 
@@ -128,39 +166,47 @@ GoHomeAndSleepUntilRested* GoHomeAndSleepUntilRested::Instance()
   return &instance;
 }
 
-void GoHomeAndSleepUntilRested::Enter(Miner* p_Miner)
+void GoHomeAndSleepUntilRested::Enter(Miner* p_miner)
 {
-  if (p_Miner->Location() != home)
-  {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walkin' home" << endl;
+  // Change color.
+  cout << "\033[32m";
 
-    p_Miner->ChangeLocation(home);
+  if (p_miner->Location() != home)
+  {
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "Walkin' home" << endl;
+
+    p_miner->ChangeLocation(home);
   }
 }
 
 
-void GoHomeAndSleepUntilRested::Execute(Miner* p_Miner)
+void GoHomeAndSleepUntilRested::Execute(Miner* p_miner)
 {
+  // Change color.
+  cout << "\033[32m";
+
   // If miner is not fatigued start to dig for nuggets again.
-  if (!p_Miner->Fatigued())  // Pay attention to `!`.
+  if (!p_miner->Fatigued())  // Pay attention to `!`.
   {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": "
+    cout << GetNameOfEntity(p_miner->ID()) << ": "
           << "What a God darn fantastic nap! Time to find more gold" << endl;
 
-     p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
+     p_miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 
   else
   {
     // Sleep
-    p_Miner->DecreaseFatigue();
+    p_miner->DecreaseFatigue();
 
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "ZZZZ... " << endl;
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "ZZZZ... " << endl;
   }
 }
 
 void GoHomeAndSleepUntilRested::Exit(Miner* pMiner)
 {
+  // Change color.
+  cout << "\033[32m";
   cout << GetNameOfEntity(pMiner->ID()) << ": " << "Leaving the house" << endl;
 }
 
@@ -175,25 +221,31 @@ GoSaloonAndDrink* GoSaloonAndDrink::Instance()
 }
 
 
-void GoSaloonAndDrink::Enter(Miner* p_Miner)
+void GoSaloonAndDrink::Enter(Miner* p_miner)
 {
-  if (p_Miner->Location() != saloon)
-  {
-    p_Miner->ChangeLocation(saloon);
+  // Change color.
+  cout << "\033[32m";
 
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon" << endl;
+  if (p_miner->Location() != saloon)
+  {
+    p_miner->ChangeLocation(saloon);
+
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "Boy, ah sure is thusty! Walking to the saloon" << endl;
   }
 }
 
-void GoSaloonAndDrink::Execute(Miner* p_Miner)
+void GoSaloonAndDrink::Execute(Miner* p_miner)
 {
-   if (p_Miner->Thirsty())
-   {
-     p_Miner->BuyAndDrinkAWhiskey();
+  // Change color.
+  cout << "\033[32m";
 
-     cout << GetNameOfEntity(p_Miner->ID()) << ": " << "That's mighty fine sippin liquer" << endl;
+  if (p_miner->Thirsty())
+  {
+    p_miner->BuyAndDrinkAWhiskey();
 
-     p_Miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
+    cout << GetNameOfEntity(p_miner->ID()) << ": " << "That's mighty fine sippin liquer" << endl;
+
+    p_miner->GetSM()->ChangeState(EnterMineAndDigForNugget::Instance());
   }
 
   else
@@ -202,9 +254,9 @@ void GoSaloonAndDrink::Execute(Miner* p_Miner)
   }
 }
 
-void GoSaloonAndDrink::Exit(Miner* p_Miner)
+void GoSaloonAndDrink::Exit(Miner* p_miner)
 {
-  cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Leaving the saloon, feelin' good" << endl;
+  cout << GetNameOfEntity(p_miner->ID()) << ": " << "Leaving the saloon, feelin' good" << endl;
 }
 
 
@@ -218,15 +270,19 @@ GoPeeUntilFeelingGood* GoPeeUntilFeelingGood::Instance()
 }
 
 
-void GoPeeUntilFeelingGood::Enter(Miner* p_Miner){}
-
-void GoPeeUntilFeelingGood::Execute(Miner* p_Miner)
+void GoPeeUntilFeelingGood::Enter(Miner* p_miner)
 {
-  if (p_Miner->NeedToPee() && p_Miner->Location() == saloon)
-  {
-    cout << GetNameOfEntity(p_Miner->ID()) << ": " << "Walking to the pope room ... feelin' good now" << endl;
-    p_Miner->SetPeeLevel(0);
-  }
+  // Change color.
+  cout << "\033[32m";
+
+  cout << GetNameOfEntity(p_miner->ID()) << ": Walkin' to the Jon ..." << endl;
 }
 
-void GoPeeUntilFeelingGood::Exit(Miner* miner){}
+void GoPeeUntilFeelingGood::Execute(Miner* p_miner)
+{
+  // Reset pee level and go back to previous state.
+  p_miner->SetPeeLevel(0);
+  p_miner->GetSM()->RevertToPreviousState();
+}
+
+void GoPeeUntilFeelingGood::Exit(Miner* p_miner){}

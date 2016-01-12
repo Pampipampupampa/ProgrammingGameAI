@@ -1,11 +1,12 @@
 #include "EntityNames.h"
 #include "Locations.h"
 #include "Miner.h"
+#include "MinerWife.h"
 
 // To enable sleep function in UNIX system.
 #include <unistd.h>
-#include <iostream>
 
+#include <iostream>
 // Using only need to avoid namespace pollution
 using std::cout;
 using std::endl;
@@ -24,15 +25,17 @@ using std::endl;
 int main()
 {
   // Create a miner
-  Miner miner(ent_Miner_Bob);
-  // cout << miner.ID() << endl;
+  Miner Bob(ent_Miner_Bob);
+  // Create the miner wife
+  MinerWife Elsa(ent_Elsa);
 
-  // Simply run the miner through a few Update calls
+  // Simply run the Bob through a few Update calls
   for (int i=0; i<20; ++i)
   {
-    miner.Update();
+    Bob.Update();
+    Elsa.Update();
     // Let user enough time to see what’s happening.
-    sleep(1);
+    sleep(3);
   }
 
   return 0;

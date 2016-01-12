@@ -7,7 +7,7 @@ enum location_type
     home,
     goldmine,
     bank,
-    saloon
+    saloon,
 };
 
 #endif

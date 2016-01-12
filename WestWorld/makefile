@@ -13,9 +13,9 @@
 # Define macro which can be used later.
 CC = g++
 # Flags to use when compiling.
-CFLAGS= -O -Wall -W -ansi -pedantic -std=c++11 -c
+CFLAGS= -O -Wall -Wextra -ansi -pedantic -std=c++11 -c
 # Files to compile (*.cpp).
-SOURCES= BaseGameEntity.cpp MinerStates.cpp Miner.cpp main.cpp
+SOURCES= BaseGameEntity.cpp MinerStates.cpp Miner.cpp MinerWifeStates.cpp MinerWife.cpp main.cpp
 # Define objects as source with .o in place of .cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 # Final executable name.

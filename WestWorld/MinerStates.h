@@ -3,7 +3,7 @@
 
 //------------------------------------------------------------------------
 //
-//  Name:   MinerOwnedStates.h
+//  Name:   MinerStates.h
 //
 //  Desc:   All the states that can be assigned to the Miner class
 //
@@ -19,6 +19,34 @@
 
 
 class Miner;
+
+
+//------------------------------------------------------------------------
+//
+//  Miner global state.
+//------------------------------------------------------------------------
+class MinerGlobalState : public State<Miner>
+{
+public:
+  // This is a singleton.
+  static MinerGlobalState* Instance();
+
+  virtual void Enter(Miner* miner);
+
+  virtual void Execute(Miner* miner);
+
+  virtual void Exit(Miner* miner);
+
+private:
+  // Constructor must be private.
+  MinerGlobalState(){};
+
+  // Copy ctor and assignment should be private too.
+  MinerGlobalState(const MinerGlobalState&);
+  MinerGlobalState& operator=(const MinerGlobalState&);
+
+};
+
 
 
 //------------------------------------------------------------------------
@@ -136,7 +164,7 @@ private:
 
 //------------------------------------------------------------------------
 //
-//  Miner global state.
+//  Miner have to pee. Nature call is powerful ...
 //------------------------------------------------------------------------
 class GoPeeUntilFeelingGood : public State<Miner>
 {
